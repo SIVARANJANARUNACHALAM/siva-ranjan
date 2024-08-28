@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DEMO</title>
+    <!-- <style>
+      .block-elements {
+        background-color: aqua;
+      }
+      .inline-elements {
+        background-color: blue;
+      }
+      .students-table,
+      th,
+      td {
+        border: 1px solid green;
+      }
+      table {
+        margin-bottom: 20px;
+      }
+    </style> -->
+
+    <style>
+      /* universal selector  */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* element selector */
+      h1 {
+        /* property: value;  */
+        font-size: 40px;
+        color: blue;
+      }
+      p {
+        font-weight: bold;
+        font-style: oblique;
+      }
+      /* id selector */
+      #praneesh-name {
+        font-size: 40px;
+        color: green;
+      }
+      /* class selector */
+      .Sivaranjan-name {
+        font-size: 40px;
+        color: orange;
+      }
+      .block-elements {
+        border-style: dashed;
+        border-color: aqua;
+        border-radius: 10px;
+        color: goldenrod;
+        font-size: 30px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      table {
+        border: 2px solid black;
+        padding: 10px;
+      }
+      th {
+       border: 2px solid black;  
+        padding: 10px;
+        background-color: grey;
+      }
+      td {
+        border: 2px solid black;
+        padding: 10px;
+
+        background-color: blanchedalmond;
+      }
+      /* curly braces */
+    </style>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li>Skills</li>
+          <li>Education</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 id="praneesh-name">Praneesh</h1>
+    <h2 class="Sivaranjan-name">Sivaranjan</h2>
+    <p>This i s paragraph text.</p>
+    <img
+      src="https://www.simplilearn.com/ice9/free_resources_article_thumb/HTML_Image_Tag.jpg"
+      alt="html-image"
+      width="100"
+      height="100"
+    />
+
+    <div class="block-elements">1. Block Elements</div>
+    <span class="inline-elements"> 2 . Inline Elements </span> <br />
+    <b class="inline-elements">BOLD</b> <br />
+    <i class="inline-elements">italic</i> <br />
+    <a class="anchor-tag" href="https://www.google.co.in/" target="_blank"
+      >youtube</a
+    >
+
+    <!-- ----------- -->
+    <!-- UNORDERED LISTS -->
+    <h1 style="color: salmon; font-size: 20px" id="un-lists">
+      UNORDERED LISTS
+    </h1>
+    <ul>
+      <li>ARUN</li>
+      <li>Praneesh</li>
+      <li>Sivaranjan</li>
+    </ul>
+
+    <!-- ORDERED LISTS -->
+    <h1>ORDERED LISTS</h1>
+    <ol>
+      <li>ARUN</li>
+      <li>Praneesh</li>
+      <li>Sivaranjan</li>
+    </ol>
+    <!-- ----------- -->
+
+    <!-- Tables -->
+    <table class="students-table">
+      <tr>
+        <th>Students</th>
+        <td>Students 1</td>
+        <td>Students 2</td>
+      </tr>
+
+      <tr>
+        <th>Name</th>
+        <td>Praneesh</td>
+        <td>Sivaranjan</td>
+      </tr>
+
+      <tr>
+        <th>Marks</th>
+        <td>80</td>
+        <td>90</td>
+      </tr>
+    </table>
+
+    <!-- SELECT TAG -->
+    <label for="Location">Choose the place</label>
+    <select>
+      <option>-- Select --</option>
+      <option>Madurai</option>
+      <option>Erode</option>
+      <option>Trichy</option>
+      <option>Chennai</option>
+      <option>Coimbatore</option>
+    </select>
+
+    <!-- Data Lists Tag -->
+    <label for="student-name">Choose the Name of the Students</label>
+    <input list="Country" />
+    <datalist id="Country">
+      <option value="India">India</option>
+      <option value="Italy">Italy</option>
+      <option value="Iran">Iran</option>
+      <option value="Israel">Israel</option>
+    </datalist>
+
+    <!-- FLEX BOX -->
+
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <!-- <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div> -->
+    </div>
+
+    <!-- Grids -->
+
+    <!-- <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div> -->
+
+    <!-- Grids and Layout -->
+    <div class="grid-area-container">
+      <div class="item1">Header</div>
+      <div class="item2">Menu</div>
+      <div class="item3">Main</div>
+      <div class="item4">Right</div>
+      <div class="item5">Footer</div>
+    </div>
+
+    <!-- <hr /> -->
+    <!-- POSITION PROPERTY -->
+
+    <div class="position-container">
+      <div class="position-item">1</div>
+      <div class="position-item">2</div>
+    </div>
+
+    <!-- FORMS -->
+    <form>
+      <label for="fname" id="fname">First Name:</label>
+      <br />
+      <input type="text" id="fname" name="fname" />
+      <br />
+      <label for="lname" id="lname">Last Name:</label>
+      <br />
+      <input type="text" id="lname" name="lname" />
+      <br />
+      <label for="email" id="email">Email:</label>
+      <br />
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="message" id="message">Leave message:</label>
+      <br />
+      <textarea name="message" rows="10" cols="30"></textarea>
+      <input type="submit" value="submit" />
+      <br />
+      <input type="time" id="date" name="date" />
+    </form>
+
+    <footer>
+      <ul>
+        <li><a>Home</a></li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Education</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+<!-- CSS - CASCADING STYLE SHEET -->
+
+<!-- 1 .INLINE CSS 
+2 .INTERNAL CSS 
+3 .External CSS -->
